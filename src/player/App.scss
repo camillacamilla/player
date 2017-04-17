@@ -1,0 +1,80 @@
+$black: #000;
+$column-width: 480px;
+$gutter-width: 0px;
+// $break: $column-width * 2 + $gutter-width * 3;
+
+.app {
+  margin:0 auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  background-color: #000000;
+  @media screen and ($column-width * 2) {
+
+  }
+}
+
+.section {
+ margin: 0 auto;
+
+  aside{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 30%;
+    max-width: 220px;
+    text-align: left;
+    .iconMenu{
+      margin:10px 20px;
+    }
+    ul{
+      margin: 25px auto;
+      padding: 0;
+      text-align: center;
+      li{
+
+        margin:10px auto;
+        list-style-type: none;
+        small{
+          position: relative;
+          top:-60px;
+          color: #ffffff;
+          z-index: 999;
+          font-size: 20px;
+        }
+        &:hover{
+          //opacity: 1;
+        }
+        img{
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+
+  .controller{
+    position: absolute;
+    opacity: 0.5;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0px 0 ;
+  }
+}
+.player-wrapper {
+  width: 100vw;
+  height:100vh;
+}
+
+.react-player {
+  margin-bottom: 10px;
+  background: rgba($black, .1);
+}
+
+.faded {
+  color: rgba($black, .5);
+}
+
+.footer {
+  margin: $gutter-width;
+}
